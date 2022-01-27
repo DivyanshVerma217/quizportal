@@ -1,8 +1,8 @@
 {
-  "name": "test",
+  "name": "client",
   "version": "1.0.0",
   "description": "",
-  "main": "db.js",
+  "main": "server.js",
   "dependencies": {
     "autoprefixer": "^10.4.2",
     "cors": "^2.8.5",
