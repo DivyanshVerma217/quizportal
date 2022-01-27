@@ -1,9 +1,7 @@
-<<<<<<< HEAD
-// const path = require('path')
 
-=======
-const path = require("path");
->>>>>>> 2f4682583ed820ba4240fb282d645ebf0c685a51
+const path = require('path')
+
+
 const express = require("express");
 const db = require("./db.js");
 
@@ -22,22 +20,18 @@ app.use("/api/course/",courseRoute);
 app.use("/api/question/", quesRoute);
 app.use("/api/quiz/", quizRoute);
 
+
+
+
+
 // app.use(express.static(path.join(__dirname, "client", "build")));
 // app.get("*", (req, res) => {
 //   res.sendFile(path.join(__dirname, "client", "build", "index.html"));
 // });
 
-
-
-
-app.use(express.static(path.join(__dirname, "client", "build")));
-app.get("*", (req, res) => {
-  res.sendFile(path.join(__dirname, "client", "build", "index.html"));
+app.get("/", (req, res) => {
+  res.send("server working");
 });
-
-// app.get("/", (req, res) => {
-//   res.send("server working");
-// });
 
 const port = process.env.PORT || 4000;
 
