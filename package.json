@@ -2,7 +2,7 @@
   "name": "client",
   "version": "1.0.0",
   "description": "",
-  "main": "server.js",
+  "main": "index.js",
   "dependencies": {
     "autoprefixer": "^10.4.2",
     "cors": "^2.8.5",
@@ -12,8 +12,7 @@
     "tailwindcss": "^3.0.16",
     "uuid": "^8.3.2"
   },
-  "devDependencies": {},
-  "scripts": {
+   "scripts": {
     "client-install": "npm install --prefix client",
     "server": "nodemon server.js",
     "client": "npm start --prefix client",
